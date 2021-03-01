@@ -1,8 +1,8 @@
 let package = Package(
   name: "RxWrapper",
   products: [
-    .library(name: "Rx", targets: ["Rx"]),
-    .library(name: "RxTesting", targets: ["RxTesting"])
+    .library(name: "Rx", type: .dynamic, targets: ["Rx"]),
+    .library(name: "RxTesting", type: .dynamic, targets: ["RxTesting"])
   ],
   dependencies: [
     .package(
